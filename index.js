@@ -10,3 +10,10 @@ function nameToAttributes(names) {
     return Object.assign({firstName: name.split(' ')[0] , lastName: name.split(' ')[1]});
   })
 }
+
+function attributesToPhrase(names) {
+  return names.map(function(person) {
+    return `${person.name} is from ${person.hometown}`
+  });
+  
+}
